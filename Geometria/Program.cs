@@ -12,47 +12,50 @@ Console.WriteLine("Inserire dimensione altezza rettangolo:");
 int altezzaUsuario = int.Parse(Console.ReadLine());
 usuario.altezzaRettangolo = altezzaUsuario;
 
-//
+Console.WriteLine();
+
+Console.WriteLine("Area: \t \t" + usuario.CalcoloArea() + " cm2");
+Console.WriteLine("Perimetro: \t" + usuario.CalcoloPerimetro() + " cm");
+
+Console.WriteLine();
+
+// Provate ad istanziare tanti rettangoli con nome diverso e attributi diversi (baseRettangolo e altezzaRettangolo) e provate a stampare le loro proprietà ad esempio con un metodo StampaRettangolo che vi stampi il vostro rettangolo ad esempio cosi:
+
+
+Rettangolo rettangoloPrimo = new Rettangolo();
+Rettangolo rettangoloSecondo = new Rettangolo();
+Rettangolo rettangoloTerzo = new Rettangolo();
+
+rettangoloPrimo.baseRettangolo = 4;
+rettangoloPrimo.altezzaRettangolo = 2;
+
+rettangoloSecondo.baseRettangolo = 6;
+rettangoloSecondo.altezzaRettangolo = 2;
+
+rettangoloTerzo.baseRettangolo = 8;
+rettangoloTerzo.altezzaRettangolo = 4;
+
+Console.WriteLine("-- Rettangolo1 --");
+rettangoloPrimo.StampaRettangolo();
+
+Console.WriteLine();
+
+Console.WriteLine("-- Rettangolo2 --");
+rettangoloSecondo.StampaRettangolo();
+
+Console.WriteLine();
+
+Console.WriteLine("-- Rettangolo3 --");
+rettangoloTerzo.StampaRettangolo();
+
+
+// Controllo
 /*
 Console.WriteLine();
 
 Console.WriteLine("Base: " + usuario.baseRettangolo);
 Console.WriteLine("Altezza: " + usuario.altezzaRettangolo);
 */
-
-Console.WriteLine();
-
-Console.WriteLine("Area: " + usuario.CalcoloArea());
-Console.WriteLine("Perimetro: " + usuario.CalcoloPerimetro());
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // Per sapere se funzionava il codice

@@ -26,5 +26,13 @@ namespace Geometria
             int perimetroRettangolo = (baseRettangolo + altezzaRettangolo) * 2;
             return perimetroRettangolo;
         }
+
+        public void StampaRettangolo()
+        {
+            Console.WriteLine("BASE: \t \t" + baseRettangolo + " cm");
+            Console.WriteLine("ALTEZZA: \t" + altezzaRettangolo + " cm");
+            Console.WriteLine("AREA: \t \t" + CalcoloArea() + " cm2");
+            Console.WriteLine("PERIMETRO: \t" + CalcoloPerimetro() + " cm");
+        }
     }
 }
